@@ -44,6 +44,7 @@
 - 백엔드에서 CORS를 적절히 설정하지 않으면 API 요청이 차단될 수 있음
 
 ### 참고 및 추가 자료
-- [토스페이먼츠 - 결제창에서 CORS 대응하기](https://docs.tosspayments.com/blog/payment-window-cors-error#%EA%B2%B0%EC%A0%9C%EC%B0%BD%EC%97%90%EC%84%9C-cors-%EB%8C%80%EC%9D%91%ED%95%98%EA%B8%B0)
+- [토스페이먼츠 - 결제창에서 CORS 대응하기](https://docs.tosspayments.com/blog/payment-window-cors-error#%EA%B2%B0%EC%A0%9C%EC%B0%BD%EC%97%90%EC%84%9C-cors-%EB%8C%80%EC%9D%91%ED%95%98%EA%B8%B0) <- 강추
 - [MDN - 교차 출처 리소스 공유 (CORS)](https://developer.mozilla.org/ko/docs/Web/HTTP/CORS)
 - [테코블 - CORS란?](https://tecoble.techcourse.co.kr/post/2020-07-18-cors/)
+- [CORS는 왜 이렇게 우리를 힘들게 하는걸까?](https://evan-moon.github.io/2020/05/21/about-cors/) <- 강추
