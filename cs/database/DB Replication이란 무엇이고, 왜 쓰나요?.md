@@ -23,6 +23,8 @@ Replication은 Master DB에는 **Insert, Update, Delete** 작업을 수행하도
 2. 데이터베이스가 자꾸 죽을경우, 복제를 이용해 예비용 서버를 만들 수도 있음
 3. 분석이나 데이터 백업 같은 무거운 작업을 처리하는 전용 서버를 구축할 수도 있음
 
+### 꼬리 질문
+- [DB Replication의 장/단점에 대해 설명해주세요.](https://github.com/kyungjinleelee/tech-interview/blob/main/cs/database/DB%20Replication%EC%9D%98%20%EC%9E%A5%EB%8B%A8%EC%A0%90%EC%9D%84%20%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.md)
 
 ### 참고 자료
 - [[DB] Replication이란 무엇이고 장점과 한계점 정리](https://velog.io/@zpswl45/DB-Replication-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC)
