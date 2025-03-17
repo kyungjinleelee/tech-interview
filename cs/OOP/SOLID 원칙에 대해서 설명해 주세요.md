@@ -1,4 +1,4 @@
-## SOLID 원칙에 대해서 설명해 주세요.
+# SOLID 원칙에 대해서 설명해 주세요.
 SOLID 원칙은 객체지향 설계 5원칙이라고도 불리며, 각 원칙의 앞 글자를 따서 만들어졌습니다.
 
 ## 1. 단일 책임 원칙(Single Responsibilty Principle)
