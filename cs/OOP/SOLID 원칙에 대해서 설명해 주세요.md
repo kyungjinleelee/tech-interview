@@ -82,7 +82,7 @@ SOLID는 서로 연관이 있는데요. 의존성 역전 원칙을 통해서 하
 
 ---
 ### 꼬리 질문
-- [SOLID 원칙 중 단일 책임 원칙(SRP)이 지켜지지 않으면 어떤 문제가 발생할 수 있나요? 이를 해결한 경험이 있다면 설명해 주세요.](#)
+- [SOLID 원칙 중 단일 책임 원칙(SRP)이 지켜지지 않으면 어떤 문제가 발생할 수 있나요? 이를 해결한 경험이 있다면 설명해 주세요.](https://github.com/kyungjinleelee/tech-interview/blob/main/cs/OOP/%EB%8B%A8%EC%9D%BC%20%EC%B1%85%EC%9E%84%20%EC%9B%90%EC%B9%99(SRP)%EC%9D%B4%20%EC%A7%80%EC%BC%9C%EC%A7%80%EC%A7%80%20%EC%95%8A%EC%95%98%EC%9D%84%20%EB%95%8C%20%EB%B0%9C%EC%83%9D%ED%95%A0%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%EB%AC%B8%EC%A0%9C%EC%99%80%20%ED%95%B4%EA%B2%B0%20%EA%B2%BD%ED%97%98.md)
 - [추상화(Abstraction)란 무엇이며, 코드로 어떻게 구현할 수 있는지 설명해주세요.](#)
 
 ### 참고 자료
