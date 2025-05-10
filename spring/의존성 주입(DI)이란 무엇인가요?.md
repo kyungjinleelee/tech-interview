@@ -47,7 +47,7 @@ Spring 프레임워크에서는 생성자 주입, 필드 주입, setter 주입 �
 ---
 ### 꼬리 질문
 - [IoC, DI 를 프로젝트에 적용한 경험에 대해 말해주세요.](#)
-- [의존성 주입 방법에서 생성자 주입을 사용해야하는 이유가 뭔가요?](#)
+- [의존성 주입 방법에서 생성자 주입을 사용해야하는 이유가 뭔가요?](https://github.com/kyungjinleelee/tech-interview/blob/main/spring/DI%EC%97%90%EC%84%9C%20%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC%20%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EB%8A%94%20%EB%AD%94%EA%B0%80%EC%9A%94%3F.md)
 ### 참고 자료
 - [[10분 테코톡] 오찌, 야호의 DI와 IoC](https://www.youtube.com/watch?feature=shared&v=8lp_nHicYd4)
 - [[10분 테코톡] 리건의 IoC와 DI](https://www.youtube.com/watch?v=BO7QFUnVdjc)
