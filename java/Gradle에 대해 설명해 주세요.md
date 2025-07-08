@@ -26,7 +26,7 @@ Dependency Configuration은 애플리케이션에 필요한 **의존성의 사�
 
 ---
 ### 꼬리 질문
-- [Maven과 Gradle의 차이점을 설명해 주세요.]()
+- [Maven과 Gradle의 차이점을 설명해 주세요.](https://github.com/kyungjinleelee/tech-interview/blob/main/java/Maven%EA%B3%BC%20Gradle%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%84%20%EC%84%A4%EB%AA%85%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.md)
 
 ### 참고 자료
 - [[10분 테코톡] 루나의 Gradle](https://www.youtube.com/watch?v=ntOH2bWLWQs)
