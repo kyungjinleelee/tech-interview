@@ -5,11 +5,11 @@
 - **hashCode()**: 객체의 해시값(정수)을 반환하는 메서드. 주로 HashMap, HashSet 등 해시 기반 컬렉션에서 사용
 
 ## 2. 오버라이드 원칙
-- equals()를 오버라이드하면 hashCode()도 반드시 오버라이드해야 함
-- 두 객체가 equals()로 같다고 판단되면, hashCode()도 같아야 함(반대는 성립하지 않음)
+- **`equals()`를 오버라이드하면 `hashCode()`도 반드시 오버라이드**해야 함
+- 두 객체가 `equals()`로 같다고 판단되면, `hashCode()`도 같아야 함(반대는 성립하지 않음)
 - **계약(Contract)**  
-  - x.equals(y) == true 이면, x.hashCode() == y.hashCode() 여야 함
-  - x.hashCode() == y.hashCode()라고 해서 x.equals(y)가 true일 필요는 없음
+  - `x.equals(y) == true` 이면, `x.hashCode() == y.hashCode()` 여야 함
+  - `x.hashCode() == y.hashCode()`라고 해서 `x.equals(y)`가 true일 필요는 없음
 
 ## 3. 왜 동시에 오버라이드해야 할까?
 - HashSet, HashMap 사용 시, 해시값이 일치해야만 논리적 동등 비교 진행
@@ -36,11 +36,10 @@ public int hashCode() {
 ## 5. 실수 & 주의할 점
 - equals만 오버라이드함 → 해시 기반 컬렉션에서 문제 발생할 수 있음
 - hashCode 구현 시, equals에 사용한 필드는 모두 hashCode에도 포함시켜야 함
-- @Data(lombok) 등 자동 생성 시 원칙 자동 적용됨
+- `@Data(lombok)` 등 자동 생성 시 원칙 자동 적용됨
 
 ## 6. 요약 정리
 - equals와 hashCode는 항상 세트로 오버라이드!
-- 컬렉션 동작의 핵심 원칙. 실무/면접 단골 질문
 
 ---
 
