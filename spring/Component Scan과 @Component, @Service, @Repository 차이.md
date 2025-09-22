@@ -12,12 +12,12 @@
 
 ### 2) @Service
 - 서비스(비즈니스 로직) 계층을 나타내는 역할
-- @Component의 확장 개념으로 기능은 같으나, 코드 의미상 분리
+- `@Component`의 확장 개념으로 기능은 같으나, 코드 의미상 분리
 - 관례적으로 “서비스 레이어” 클래스에 사용
 
 ### 3) @Repository
 - 데이터 엑세스 계층(DAO)에 사용하는 어노테이션
-- @Component의 확장.  
+- `@Component`의 확장.  
 - **추가 기능:** 예외 변환 (Spring Data Access Exception 변환 기능 적용됨)
 - 관례적으로 "DB 작업"의 DAO/Repository 구현 클래스에 사용
 
@@ -46,9 +46,40 @@ public class UserService {}
 public class UserRepository {}
 ```
 
-## 5. 참고
-- 직접적인 기능 차이보다 “관례적 계층 분리”가 가장 큼  
-- 예외: @Repository는 예외 변환 기능이 추가
+## 5. 내부 구현 방식
+
+- **@Component, @Service, @Repository** 모두 `@Component`를 기반으로 동작하는 **메타 어노테이션**(Meta-Annotation)이다.
+    - `@Service`, `@Repository`, `@Controller` 모두 내부적으로 `@Component`로 선언되어 있어서, 스프링 컴포넌트 스캔 시 자동 빈 등록이 동일하게 처리됨.
+- **차이점은 '부가 기능'과 의미 부여에 있다.**
+    - `@Repository`: 내부적으로 데이터 접근 예외(예, SQLException 등)를 스프링의 DataAccessException으로 변환하는 기능이 추가되어 있음.
+    - `@Service`: 내부적으로 특별한 부가 기능은 없지만, 향후 비즈니스 로직용 AOP 적용 포인트로 사용할 수 있도록 의미를 구분.
+    - `@Component`: 순수하게 “빈 등록”만 담당.
+- 즉, 직접적인 기능 차이보다 “관례적 계층 분리”가 가장 큼  
+- 예외: `@Repository`는 예외 변환 기능이 추가
+  
+### 참고: 각 어노테이션의 구현 코드 예시
+
+```java
+// org.springframework.stereotype.Service
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@Component
+public @interface Service {
+    String value() default "";
+}
+
+// org.springframework.stereotype.Repository
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@Component
+public @interface Repository {
+    String value() default "";
+}
+```
+이렇게 되면, 스프링은 컴포넌트 스캔 시 실제로는 `@Component`가 붙은 모든 클래스를 자동으로 빈으로 등록하며,
+@Repository의 예외 변환 등은 스프링 내부 AOP/프록시 체인에 의해 추가적으로 처리됩니다.
 
 ---
 
